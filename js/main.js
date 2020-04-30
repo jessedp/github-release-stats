@@ -180,6 +180,13 @@ $(function() {
             "&repository=" + $("#repository").val();
     });
 
+    $('#repository').on('keypress',function(e) {
+        if(e.which == 13) {
+            window.location = "?username=" + $("#username").val() +
+            "&repository=" + $("#repository").val();
+        }
+    });
+
     var username = getQueryVariable("username");
     var repository = getQueryVariable("repository");
 
