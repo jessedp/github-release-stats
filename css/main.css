@@ -1,5 +1,76 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 html * {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin-bottom: 40px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(210, 210, 210, 0.2);
+    border-top: 1px solid rgba(210, 210, 210, 0.4);
+}
+
+.top-bar {
+    background-color: rgba(210, 210, 210, 0.2);
+    border-bottom: 1px solid rgba(210, 210, 210, 0.4);
+    color: rgb(119, 119, 119);;
+    border-color: #e7e7e7;
+    font-size: 18px;
+}
+.top-bar a {
+    color: rgb(119, 119, 119);;
+}
+
+.top-bar a:hover {
+    color: darkslategrey;
+}
+
+.gh-link {
+    font-size: 24px;
+}
+
+.form-group {
+    max-width: 250px;
+    font-size: 14px;
+}
+
+.input::placeholder {
+    color: darkgray;
+}
+
+.slash {
+    font-size: 32px;
+    color: slategray;
+}
+
+.description {
+    color:lightgrey
+}
+
+.description span {
+    font-size:9em; 
+}
+
+
+.fa-heart {
+    color: red;
+}
+
+.navbar-brand {
+    color: rgb(119, 119, 119);;
 }
 
 .form-group {
@@ -62,25 +133,4 @@ html * {
     left: 47%;
 }
 
-#description {
-    text-align: center;
-}
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin-bottom: 40px;
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: rgba(210, 210, 210, 0.2);
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid rgba(210, 210, 210, 0.4);
-}
