@@ -92,7 +92,7 @@ const showStats = (data) => {
 
   if (err) {
     html = `<div class='col-md-8 col-md-offset-4 d-inline-block error output'>${errMessage}</div>`;
-    $("#projectHead").show();
+    $("#lookupForm").show();
   } else {
     html += "<div class='col-md-8 offset-md-2 d-block text-left output'>";
     let latest = true;
