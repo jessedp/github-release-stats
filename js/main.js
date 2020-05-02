@@ -19,10 +19,6 @@ const iconClassesByExt = {
   deb: "fab fa-ubuntu",
 };
 
-$(document).ready(() => {
-  $("#username").focus();
-});
-
 const shouldIgnore = (str) => {
   let ignore = false;
   ignores.forEach((pat) => {
@@ -94,6 +90,7 @@ const showStats = (data) => {
     html = `<div class='col-md-8 col-md-offset-4 d-inline-block error output'>${errMessage}</div>`;
     $("#lookupForm").show();
   } else {
+    $("#lookupForm").hide();
     html += "<div class='col-md-8 offset-md-2 d-block text-left output'>";
     let latest = true;
     let totalDownloadCount = 0;
@@ -244,12 +241,10 @@ const showStats = (data) => {
     html += "</div>";
   }
 
-  const lookupDiv = $("#lookupForm");
   const resultDiv = $("#stats-result");
   resultDiv.hide();
   resultDiv.html(html);
   $("#loader-gif").hide();
-  lookupDiv.hide();
   resultDiv.slideDown();
 };
 
@@ -300,6 +295,10 @@ $(() => {
   } else {
     $("#lookupForm").show();
   }
+});
+
+$(document).ready(() => {
+  $("#username").focus();
 });
 
 /**
