@@ -1,0 +1,31 @@
+{
+  "name": "github-release-stats",
+  "version": "1.0.0",
+  "description": "concise/pretty display of github release stats",
+  "scripts": {
+    "lint": "eslint --cache --format=pretty ."
+  },
+  "main": "index.js",
+  "repository": "git@github.com:jessedp/github-release-stats.git",
+  "author": "jesse <jessedp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-formatter-pretty": "^3.0.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5"
+  },
+  "dependencies": {
+    "prettier": "^2.0.5"
+  },
+    "husky": {
+      "hooks": {
+        "pre-commit": "yarn lint"
+      }
+  }
+
+}
