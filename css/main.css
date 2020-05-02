@@ -184,3 +184,12 @@ body {
 .gh-link {
     font-size: 24px;
 }
+
+.fa-bomb {
+    color: crimson;
+}
+
+.smaller {
+    font-size: 12px;
+    color: slategray;
+}

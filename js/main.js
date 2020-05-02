@@ -180,9 +180,15 @@ const showStats = (data) => {
 
       /* release header */
       let rowClass = "release";
-      if (latest) {
+      let iconClass = "fa-tag";
+      if (latest && !item.prerelease) {
         rowClass = `${rowClass} latest-release`;
         latest = false;
+      }
+      let preText = "";
+      if (item.prerelease) {
+        iconClass = "fa-bomb";
+        preText = '<span class="smaller">(pre-release)</span>';
       }
 
       html += `
@@ -190,7 +196,7 @@ const showStats = (data) => {
             <div class='col-8 p-0'>
                 <h4 >
                     <a href='${releaseURL}' target='_blank'>
-                    <span class='fa fa-tag pr-2'></span>${releaseTag}
+                    <span class='fa ${iconClass} pr-2'></span>${releaseTag} ${preText}
                     </a>
                 </h4>
             </div>
