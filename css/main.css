@@ -23,6 +23,11 @@ body {
     border-top: 1px solid rgba(210, 210, 210, 0.4);
 }
 
+#loader-gif {
+    display: none;
+}
+
+
 .top-bar {
     background-color: rgba(210, 210, 210, 0.2);
     border-bottom: 1px solid rgba(210, 210, 210, 0.4);
@@ -38,8 +43,31 @@ body {
     color: darkslategrey;
 }
 
-.gh-link {
-    font-size: 24px;
+#projectHead {
+    display: none;
+}
+
+#searchToggle {
+    font-size: 14px;
+}
+
+#searchToggle:hover {
+    cursor: pointer;
+}
+
+#lookupForm {
+    padding: 0;
+    margin:0;
+    display: none;
+}
+
+#repository {
+    height: 38px;
+}
+
+
+.project-info {
+    color:darkgray;
 }
 
 .form-group {
@@ -57,7 +85,10 @@ body {
 }
 
 .description {
-    color:lightgrey
+    color:lightgrey;
+}
+.description h3 {
+    color: darkgray;
 }
 
 .description span {
@@ -81,11 +112,6 @@ body {
     width: 100%;
 }
 
-#stats-result {
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
 .error {
     background-color: rgba(231, 76, 60, 0.2);
     border: solid 1px rgba(231, 76, 60, 0.4);
@@ -96,14 +122,13 @@ body {
 }
 
 .total-downloads {
-    margin-bottom: 25px;
     text-align: center;
+    font-size: 12px;
 }
 
 .total-downloads h2 {
-    display: inline;
     font-size: 18px;
-    margin-right: 10px;
+    display: inline-block;
 }
 
 .release {
@@ -111,7 +136,7 @@ body {
     border: solid 1px rgba(127, 140, 141, 0.4);
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .latest-release {
@@ -127,10 +152,35 @@ body {
     border-top-color: rgba(127, 140, 141, 0.4);
 }
 
-#loader-gif {
-    position: absolute;
-    bottom: 15%;
-    left: 47%;
+.release-dl-count {
+    font-size: 24px;
+    font-weight: bold;
+    color: forestgreen;
+    text-align: right;
 }
 
+.author {
+    font-size: 12px;
+}
 
+.author-img {
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.table-sm {
+    font-size: 12px;
+}
+
+.row-good {
+    background-color:mintcream;
+}
+
+.row-ignore {
+    background-color:mistyrose;
+}
+
+.gh-link {
+    font-size: 24px;
+}
